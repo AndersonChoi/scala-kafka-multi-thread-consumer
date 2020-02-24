@@ -23,6 +23,9 @@ object Main extends App {
   // Shutdown hook makes graceful shutdown
   sys.ShutdownHookThread {
     ConsumerStatus.isRunning = false
-    println("exiting")
+    while (ConsumerStatus.consumerInfo.nonEmpty){
+      Thread.sleep(1000)
+    }
+    println("Shutdown application")
   }
 }
