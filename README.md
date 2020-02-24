@@ -1,6 +1,8 @@
 # scala-kafka-multi-thread-consumer
 Scala multi thread consumer application example
 
+Manual(KOR) : https://blog.voidmainvoid.net/313
+
 ## How to run
 ```
 $ sbt run Main
